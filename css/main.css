@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    background-color: hsl(240, 78%, 98%);
+    background-image: url("../images/bg-top.svg"), url("../images/bg-bottom.svg");
+    background-attachment: fixed;
+    background-position: right -195px  top -40px;
+    background-repeat: no-repeat;
+    background-size: auto, 0;
+    text-align: center;
+    padding-top: 66px;
+
+}
+
+main {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 70px;
+}
+
+h1 {
+    font-size: 31px;
+    color: hsl(233, 13%, 49%);
+}
+
+h2 {
+    font-size: 68px;
+    padding: 28px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    color: hsl(234, 14%, 74%);
+}
+
+.choice-container {
+    margin-top: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outter-toggle {
+    position: relative;
+    width: 56px;
+    height: 32px;
+    border-radius: 16px;
+    background-image: linear-gradient(to right, hsl(236, 72%, 79%) ,hsl(237, 63%, 64%));
+    cursor: pointer;
+    margin: 0 23px;
+}
+
+.toggle-switch {
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background-color: white;
+    top: 4px;
+    left: 28px;
+    transition: left .3s ease-in-out;
+}
+
+.annual .toggle-switch {
+    left: 4px; 
+}
+
+.card-container {
+    width: 100%;
+    margin-top: 80px;
+}
+
+.card {
+    width: 325px;
+    margin: auto;
+    border-radius: 10px;
+    padding: 35px 30px 30px;
+    max-height: 452px;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.05);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.05);
+}
+
+.card-small {
+    background-color: white;
+}
+
+.card-large {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-image: linear-gradient(135deg, hsl(236, 72%, 79%) ,hsl(237, 63%, 64%));
+}
+
+.annually,
+.annual .monthly {
+    display: none;
+}
+
+.annual .annually,
+.monthly {
+    display: flex;
+}
+
+.dollar {
+    font-size: 38px;
+}
+
+.card-small h3 {
+    color: hsl(233, 13%, 49%);
+}
+
+.card-small h2 {
+    color: hsl(232, 13%, 33%);
+}
+
+.card-large h2,
+.card-large h3 {
+    color: hsl(240, 78%, 98%);
+}
+
+.details h3 {
+    padding: 18px 0 17px;
+}
+
+.details h3 {
+    border-top: 1px solid hsl(234, 14%, 74%);
+}
+
+.details h3:last-of-type {
+    border-bottom: 1px solid hsl(234, 14%, 74%);
+}
+
+.card a {
+    display: block;
+    padding: 14px 0 13px;
+    width: 100%;
+    border-radius: 7px;
+    margin-top: 32px;
+    text-transform: uppercase;
+}
+
+.card-small a {
+    color: hsl(240, 78%, 98%);
+    background-image: linear-gradient(to right, hsl(236, 72%, 79%) ,hsl(237, 63%, 64%));
+}
+
+.card-large a {
+    color: hsl(237, 63%, 64%);
+    background-color: hsl(240, 78%, 98%);
+}
+
+.attribution {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    margin-left: -50%;
+    bottom: 5px;
+    font-size: 11px;
+    color: hsl(234, 14%, 74%);
+}
+
+@media (min-width: 400px) {
+    .card {
+        width: 350px;
+    }
+}
+
+@media (min-width: 700px) {
+    body {
+        background-position: right -100px  top ;
+    }
+}
+
+@media (min-width: 850px) {
+    body {
+        background-position: top right;
+    }
+}
+
+@media (min-width: 1025px) {
+
+    body {
+        background-position: top right, bottom left;
+        background-size: auto;
+        padding-top: 75px;
+    }
+
+    main {
+        padding-bottom: 50px;
+    }
+
+    .card-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 65px;
+    }
+
+    .card {
+        width: 325px;
+        margin: 0;
+    }
+
+    .card-large {
+        padding: 59px 30px 54px;
+        max-height: 500px;
+    }
+
+    .card-small:first-of-type {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .card-small:last-of-type {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+}
+
+@media (min-width: 1075px) {
+    .card {
+        width: 350px;
+    }
+}
+
+@media (min-height: 800px) {
+    body {
+        height: 100vh;
+        overflow-y: hidden;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
