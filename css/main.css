@@ -56,6 +56,11 @@ h3 {
     background-image: linear-gradient(to right, hsl(236, 72%, 79%) ,hsl(237, 63%, 64%));
     cursor: pointer;
     margin: 0 23px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.outter-toggle:hover {
+    opacity: 0.5;
 }
 
 .toggle-switch {
@@ -90,13 +95,13 @@ h3 {
 }
 
 .card-small {
-    background-color: white;
+    background: white;
 }
 
 .card-large {
     margin-top: 30px;
     margin-bottom: 30px;
-    background-image: linear-gradient(135deg, hsl(236, 72%, 79%) ,hsl(237, 63%, 64%));
+    background: linear-gradient(135deg, hsl(236, 72%, 79%) ,hsl(237, 63%, 64%));
 }
 
 .annually,
@@ -147,9 +152,24 @@ h3 {
     text-transform: uppercase;
 }
 
+.card a:hover {
+    background-color: transparent;
+}
+
 .card-small a {
     color: hsl(240, 78%, 98%);
     background-image: linear-gradient(to right, hsl(236, 72%, 79%) ,hsl(237, 63%, 64%));
+}
+
+.card-small a:hover {
+    border: 1px solid hsl(237, 63%, 64%);
+    color: hsl(237, 63%, 64%);
+    background-image: none;
+}
+
+.card-large a:hover {
+    border: 1px solid hsl(240, 78%, 98%);
+    color: hsl(240, 78%, 98%);
 }
 
 .card-large a {
